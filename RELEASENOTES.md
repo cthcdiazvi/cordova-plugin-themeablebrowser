@@ -21,6 +21,22 @@
 Release Notes
 =============
 
+0.3.1-custom
+---------
+Patch across fix for https://issues.apache.org/jira/browse/CB-11013 - make pausing of videos on entering background the default since to do otherwise breaches YouTube Terms of Service and will lead to Play Store rejecting app.
+
+
+0.3.0-custom
+---------
+Customisations:
+- Add native File Choose to Android implementation
+- Fix iOS native view hierarchy for show/hide
+Bug fix: Webview below 20px under the toolbar on iOS 11. See https://github.com/initialxy/cordova-plugin-themeablebrowser/issues/168
+Add Android support for postMessage API
+Add iOS (UIWebView) support for postMessage API
+Fix common causes of Android crashes due to null elements
+Guard against native Android crash when closing dialog
+
 0.2.17
 ------
 
