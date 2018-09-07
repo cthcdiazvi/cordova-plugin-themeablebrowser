@@ -285,6 +285,26 @@ public class ThemeableBrowser extends CordovaPlugin {
     }
 
     /**
+     * Called when the system is about to start resuming a previous activity.
+     */
+    @Override
+    public void onPause(boolean multitasking) {
+        if(inAppWebView != null){
+            inAppWebView.onPause();
+        }
+    }
+
+    /**
+     * Called when the activity will start interacting with the user.
+     */
+    @Override
+    public void onResume(boolean multitasking) {
+        if(inAppWebView != null){
+            inAppWebView.onResume();    
+        }
+    }
+
+    /**
      * Inject an object (script or style) into the ThemeableBrowser WebView.
      *
      * This is a helper method for the inject{Script|Style}{Code|File} API calls, which
