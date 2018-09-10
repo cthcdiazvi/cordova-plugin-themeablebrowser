@@ -32,7 +32,7 @@ matrix:
     os: osx
     osx_image: xcode8.3
     language: node_js
-    node_js: '4.2'
+    node_js: '7'
   # TBD SKIP for now:
   # - env: PLATFORM=ios-10.0
   #   os: osx
